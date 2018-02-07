@@ -1,0 +1,206 @@
+body, html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	background-color: #111111;
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+}
+
+.header {
+	width: 100%;
+	text-align: center;
+ 	background-color: #6e6e6e;
+ 	padding: 20px;
+ 	text-align: center;
+  	color: #fff;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+ 	background-color: #6e6e6e;
+ 	padding: 20px;
+ 	text-align: center;
+  	color: #fff;
+}
+
+.calc-title {
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.form-check-label {
+	cursor: pointer;
+}
+
+#show-plane {
+	display: none;
+}
+
+.plane-text {
+	display: inline-block;
+	margin-top: 30px;
+	padding-bottom: 3px;
+	font-size: 16px;
+}
+
+hr {
+	margin-top: 5px;
+	margin-bottom: 0;
+	width: 100%;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #a6a6a6, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #a6a6a6, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #a6a6a6, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #a6a6a6, #f0f0f0);
+}
+
+.plane-first-time {
+	display: inline-block;
+	margin-top: 16px;
+	font-size: 16px;
+}
+
+.plane-price-input {
+	display: block;
+	margin-top: 22px;
+	font-size: 18px;
+}
+
+#output-text-plane {
+	margin-top: 16px;
+	font-size: 22px;
+	text-align: center;
+}
+
+#out-plane {
+	width: 70%;
+	margin-left: 15%;
+    padding: 10px 20px;
+    border: solid 2px #6e6e6e;
+	background-color: #ffffff;
+}
+
+.first-time, .three-one-days {
+	display: inline-block;
+	margin-top: 16px;
+	font-size: 16px;	
+}
+
+.price-input, .weight-input {
+	margin-top: 22px;
+	font-size: 18px;	
+}
+
+#input-euro, #input-euro-plane {
+	margin-left: 30px;
+	padding: 4px 6px;
+}
+
+#input-weight {
+	margin-left: 56px;
+	padding: 4px 6px;
+}
+
+#output-text {
+	margin-top: 16px;
+	font-size: 22px;
+	text-align: center;
+}
+
+#out {
+	width: 70%;
+	margin-left: 15%;
+    padding: 10px 20px;
+    border: solid 2px #6e6e6e;
+	border-radius: 4px;
+	background-color: #ffffff;
+	text-align: center;
+}
+
+.calculator-area {
+	position: relative;
+	/*width: 440px;
+	max-width: 440px;*/
+	/*height: 500px;*/
+	padding: 10px 12px;
+	margin: 10px;
+	border: solid 1px #000000;
+	background-color: #f2f2f2;
+}
+
+#calculation-fields {
+	margin-top: 30px;
+}
+
+@media all and (max-width: 480px) {
+	.calculator-area {
+		width: 90%;
+		margin-left: 5%;
+		padding: 10px 6px;
+	}
+	#calculation-fields {
+		margin-top: 8px;
+	}
+	.calc-title {
+		font-size: 18px;
+	}
+	.block-span {
+		display: block;
+	}
+	.plane-text, .plane-first-time {
+		margin-top: 12px;
+	}
+	.plane-price-input {
+		margin-top: 16px;
+		font-size: 16px;	
+		text-align: center;	
+	}
+	#input-euro-plane {
+		max-width: 90%;
+		margin-top: 8px;
+		margin: 0;
+	}
+	#out-plane {
+		width: 80%;
+		margin-left: 10%;
+    	padding: 10px 20px;
+    	border: solid 2px #6e6e6e;
+		background-color: #ffffff;	
+		text-align: center;	
+	}
+	.first-time, .three-one-days {
+		margin-top: 12px;
+	}
+	.price-input, .weight-input {
+		margin-top: 6px;
+		font-size: 16px;
+		text-align: center;	
+	}
+	#input-euro {
+		max-width: 90%;
+		margin-top: 8px;
+		margin: 0;
+	}
+	#input-weight {
+		max-width: 90%;
+		margin-top: 8px;
+		margin: 0;
+	}
+	#output-text {
+		margin-top: 6px;
+		font-style: 18px;
+	}
+	#out {
+		width: 80%;
+		margin-left: 10%;
+    	padding: 10px 20px;
+    	border: solid 2px #6e6e6e;
+		background-color: #ffffff;	
+		text-align: center;
+	}
+
+}
+

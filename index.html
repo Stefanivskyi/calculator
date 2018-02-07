@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Онлайн калькулятор для визначення суми податку при перевезенні товару через кордон</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>   
+
+<body>
+<!--
+<header class="header">
+  Розмитнення товарів в Україні "header"
+</header>
+-->
+<div class="calculator-area">
+
+  <h3 class="calc-title">Митний калькулятор</h3>
+  <div class="">
+    <div class="plane-text">
+      <label class="form-check-label">
+        <input class="" type="checkbox" id="plane-check" onclick="refreshOutputPlane()" value="plane-check"> 
+        Ви перетинаєте кордон повітряним транспортом?
+      </label>
+      <hr>
+    </div>
+  </div>
+  
+    <div id="show-plane">
+
+      <div class="plane-first-time">
+        <label class="form-check-label">
+          <input class="" type="checkbox" id="plane-first-time-check" onclick="refreshOutputPlane()" value="plane-first-time-check"> 
+          Ви перетинаєте кордон вперше за добу?
+        </label>
+      </div>
+
+      <div class="plane-price-input">
+        <span class="block-span">Вартість товару</span>
+        <input type="text" name="text" placeholder="Введіть суму, Євро" id="input-euro-plane" onkeyup="refreshOutputPlane()" required="">
+      </div>
+
+      <div id="output-text-plane">
+        <p>Митний збір складе:</p>
+      </div>
+      <div id="out-plane"></div>
+
+    </div>
+
+  <div id="hide-plane">
+    <div class="">
+      <div class="first-time">
+        <label class="form-check-label">
+          <input class="" type="checkbox" id="first-time-check" onclick="refreshOutput()" value="first-time-check"> 
+          Ви перетинаєте кордон вперше за добу?
+        </label>
+      </div><br>
+      
+      <div class="three-one-days">
+        <label class="form-check-label">
+          <input class="" type="checkbox" id="72-check" onclick="refreshOutput()" value="72-check"> 
+          Ви вперше перетинаєте кордон за 72 години та були відсутні на території України 24 години?
+        </label> 
+      </div>   
+      
+      <div id="calculation-fields">
+        <div class="price-input">
+          <span class="block-span">Вартість товару</span>
+          <input type="text" name="text" placeholder="Введіть суму, Євро" id="input-euro" onkeyup="refreshOutput()" required="">
+        </div>
+        <div id="weight-div" class="weight-input">
+          <span class="block-span">Маса товару</span>
+          <input type="text" name="text" placeholder="Введіть масу, кг" id="input-weight" onkeyup="refreshOutput()" required=""><br>
+        </div>
+      </div>
+
+      <div id="output-text">
+        <p>Митний збір складе:</p>
+      </div>
+      <div id="out">Мито 0.00€ + ПДВ 0.00€ = 0.00€</div>
+    </div>
+  </div>
+  <div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- new calc -->
+      <ins class="adsbygoogle"
+       style="display:inline-block;width:728px;height:90px"
+       data-ad-client="ca-pub-6199962750400216"
+       data-ad-slot="4704158235"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</div>
+
+<!-- 
+<footer class="footer">
+  &copy; All rights reversed /<a href="#"> Everlink </a>
+</footer>
+-->
+<!--
+<div class="">Відсутні 24 години?</div>
+<div class="form-check form-check-inline">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" id="24-chech" onclick="add()" value="24-check"> Так
+  </label>
+</div>
+-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
